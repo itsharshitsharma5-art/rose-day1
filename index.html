@@ -4,15 +4,14 @@
   <title>Happy Rose Day ❤️</title>
 </head>
 <body style="background:pink; text-align:center; padding-top:100px; font-family:sans-serif;">
-<button onclick="playMusic()"
+<button onclick="document.getElementById('song').play()"
  style="padding:12px 25px; font-size:16px; border-radius:25px;">
 Play Our Song 🎵
 </button>
 
-<audio id="music" loop>
+<audio id="song" loop>
   <source src="Untitled.mp3" type="audio/mpeg">
 </audio>
-
 <script>
   function playMusic() {
     document.getElementById("music").play();
